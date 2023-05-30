@@ -1,3 +1,5 @@
+# It's a fork of draft-js-wysiwyg that is built using plain TS compiler instead of a bundling with webpack. It's done to make this package tree-shakable.
+
 <p align="center">
   <a href="https://draft-js-wysiwyg.com">
     <img width="100" src="https://draft-js-wysiwyg.com/static/logo.svg" alt="Draft-js-wysiwyg logo" />
