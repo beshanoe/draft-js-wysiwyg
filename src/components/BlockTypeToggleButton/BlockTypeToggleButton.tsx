@@ -3,7 +3,7 @@ import { ToggleButton, ToggleButtonProps } from '@material-ui/lab';
 import useBlockTypeToggle from '../useBlockTypeToggle';
 
 export interface BlockTypeToggleButtonProps
-  extends Omit<ToggleButtonProps, 'value' | 'selected'> {
+  extends Omit<ToggleButtonProps, 'value'> {
   /**
    * If `true`, inline style will not be available from keyboard shortcuts
    * @default false
