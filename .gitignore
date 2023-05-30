@@ -1,6 +1,8 @@
 node_modules
 lib
+dist
 types
+.vscode
 /docs/.next
 /docs/out
 /docs/node_modules

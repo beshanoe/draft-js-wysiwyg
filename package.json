@@ -1,7 +1,7 @@
 {
-  "name": "draft-js-wysiwyg",
+  "name": "@beshanoe/draft-js-wysiwyg",
   "description": "A wysiwyg using DraftJS.",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "private": true,
   "keywords": [
     "draftjs",
@@ -10,12 +10,15 @@
     "richtext",
     "material-ui"
   ],
-  "main": "lib/index.js",
-  "types": "types/index.d.ts",
+  "main": "./dist/commonjs/index.js",
+  "module": "./dist/es/index.js",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
-    "webpack": "webpack",
     "dev": "npm run webpack -- --mode development --watch",
-    "build": "npm run webpack -- --mode production",
+    "build": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/commonjs",
     "build-types": "tsc -d --emitDeclarationOnly --outDir types",
     "format": "eslint --ext tsx --ext ts src --fix",
     "lint": "eslint --ext tsx --ext ts src && tsc --noEmit",
@@ -95,8 +98,7 @@
     "clsx": "^1.1.1",
     "immutable": "^4.0.0-rc.12",
     "prop-types": "^15.7.2",
-    "react-is": "^17.0.2",
-    "terser-webpack-plugin": "^4.2.2"
+    "react-is": "^17.0.2"
   },
   "workspaces": [
     "docs"

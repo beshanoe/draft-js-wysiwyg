@@ -1,11 +1,9 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "ESNext",
     "target": "es5",
-    "lib": [
-      "es2015",
-      "dom"
-    ],
+    "lib": ["es2015", "dom"],
+    "rootDir": "src",
     "jsx": "preserve",
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,15 +16,12 @@
     "isolatedModules": true,
     "experimentalDecorators": true,
     "noErrorTruncation": false,
-    "outDir": "lib",
+    "outDir": "dist/es",
     "declaration": true,
     "paths": {
       "test-utils": ["./utils/test-utils"]
     }
   },
-  "exclude": [
-    "**/lib",
-    "**/node_modules",
-    "docs/.next"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.test.tsx"]
 }
