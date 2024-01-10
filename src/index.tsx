@@ -48,3 +48,8 @@ export type { BlockTypeMenuItemProps } from './components';
 
 export { TextAlignMenuItem } from './components';
 export type { TextAlignMenuItemProps } from './components';
+
+/**
+ * @deprecated
+ */
+export { StylesProvider as MUI4StylesProvider } from '@material-ui/core/styles';
